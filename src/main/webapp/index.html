@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html ng-app="linePuzzle">
+
+<head>
+    <meta charset="utf-8" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/navBar.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-postman/js/postman.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <script src="js/application.js"></script>
+    <script src="js/GameModule.js"></script>
+    <script src="js/paintModule.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+
+        <ul>
+            <li><a class="navBar" ng-href="#!">Home</a></li>
+
+
+            <li><a ng-href="#!game-panel">New Game</a></li>
+
+
+            <li><a ng-href="#!best-score">Best Score</a></li>
+        </ul>
+
+
+    </div>
+
+
+    <div ng-view="name"></div>
+
+</body>
+
+</html>
